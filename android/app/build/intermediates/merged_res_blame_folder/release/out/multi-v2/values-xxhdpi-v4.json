@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.OfferBoat.app-mergeReleaseResources-104:/values-xxhdpi-v4/values-xxhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/res/values-xxhdpi-v4/values-xxhdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "63",
+                        "endOffsets": "114"
+                    }
+                }
+            ]
+        }
+    ]
+}

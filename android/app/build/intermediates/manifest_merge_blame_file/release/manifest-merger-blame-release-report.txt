@@ -1,0 +1,1391 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.OfferBoat"
+4    android:versionCode="3"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+12-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:6:5-75
+12-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:6:22-73
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:7:5-64
+13-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:7:22-62
+14
+15    <uses-feature
+15-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:8:5-85
+16        android:name="android.hardware.camera"
+16-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:8:19-57
+17        android:required="false" />
+17-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:8:58-82
+18    <uses-feature
+18-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:9:5-91
+19        android:name="android.hardware.camera.front"
+19-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:9:19-63
+20        android:required="false" />
+20-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:9:64-88
+21
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:10:5-79
+22-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:10:22-76
+23
+24    <uses-feature
+24-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:11:5-90
+25        android:name="android.hardware.location.gps"
+25-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:11:19-63
+26        android:required="true" />
+26-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:11:64-87
+27    <uses-feature
+27-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:12:5-94
+28        android:name="android.hardware.location.network"
+28-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:12:19-67
+29        android:required="true" />
+29-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:12:68-91
+30
+31    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+31-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:13:5-77
+31-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:13:22-74
+32    <uses-permission android:name="android.permission.WAKE_LOCK" />
+32-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:23:5-68
+32-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:23:22-65
+33    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+33-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:25:5-81
+33-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:25:22-78
+34    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- See https://developer.android.com/training/package-visibility/declaring for more details. -->
+34-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:26:5-77
+34-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:26:22-74
+35    <queries>
+35-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:8:5-12:15
+36
+37        <!-- Added to check if Chrome is installed for browser-based payment authentication (e.g. 3DS1). -->
+38        <package android:name="com.android.chrome" />
+38-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:11:9-54
+38-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:11:18-51
+39        <!-- Added to check the default browser that will host the AuthFlow. -->
+40        <intent>
+40-->[com.stripe:financial-connections:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/47f9c71e908be3409172efbe400dc20f/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:13:9-17:18
+41            <action android:name="android.intent.action.VIEW" />
+41-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:39:5-57
+41-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:39:13-54
+42
+43            <data android:scheme="http" />
+43-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:5-35
+43-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:11-32
+44        </intent>
+45        <intent>
+45-->[:react-native-image-crop-picker] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:9-10:18
+46            <action android:name="android.media.action.IMAGE_CAPTURE" />
+46-->[:react-native-image-crop-picker] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-73
+46-->[:react-native-image-crop-picker] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:21-70
+47        </intent> <!-- Needs to be explicitly declared on Android R+ -->
+48        <package android:name="com.google.android.apps.maps" />
+48-->[com.google.android.gms:play-services-maps:18.0.2] /Users/marianoor/.gradle/caches/transforms-4/926d6bebd5cb41e954673d64600433b0/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:9-64
+48-->[com.google.android.gms:play-services-maps:18.0.2] /Users/marianoor/.gradle/caches/transforms-4/926d6bebd5cb41e954673d64600433b0/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:18-61
+49    </queries>
+50
+51    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+51-->[:react-native-image-crop-picker] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:5-81
+51-->[:react-native-image-crop-picker] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:22-78
+52    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+53    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+53-->[com.google.firebase:firebase-messaging:24.0.0] /Users/marianoor/.gradle/caches/transforms-4/05f0cbac9d8b79cd08eeb1f04d7e9ad7/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:26:5-82
+53-->[com.google.firebase:firebase-messaging:24.0.0] /Users/marianoor/.gradle/caches/transforms-4/05f0cbac9d8b79cd08eeb1f04d7e9ad7/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:26:22-79
+54
+55    <uses-feature
+55-->[com.google.android.gms:play-services-maps:18.0.2] /Users/marianoor/.gradle/caches/transforms-4/926d6bebd5cb41e954673d64600433b0/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
+56        android:glEsVersion="0x00020000"
+56-->[com.google.android.gms:play-services-maps:18.0.2] /Users/marianoor/.gradle/caches/transforms-4/926d6bebd5cb41e954673d64600433b0/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:27:9-41
+57        android:required="true" />
+57-->[com.google.android.gms:play-services-maps:18.0.2] /Users/marianoor/.gradle/caches/transforms-4/926d6bebd5cb41e954673d64600433b0/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:28:9-32
+58
+59    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+59-->[com.google.android.recaptcha:recaptcha:18.4.0] /Users/marianoor/.gradle/caches/transforms-4/433163504d00de43ed43e587bac044c9/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:9:5-98
+59-->[com.google.android.recaptcha:recaptcha:18.4.0] /Users/marianoor/.gradle/caches/transforms-4/433163504d00de43ed43e587bac044c9/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:9:22-95
+60
+61    <permission
+61-->[androidx.core:core:1.12.0] /Users/marianoor/.gradle/caches/transforms-4/5526540edb9632d0cbb6479436703845/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+62        android:name="com.OfferBoat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+62-->[androidx.core:core:1.12.0] /Users/marianoor/.gradle/caches/transforms-4/5526540edb9632d0cbb6479436703845/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+63        android:protectionLevel="signature" />
+63-->[androidx.core:core:1.12.0] /Users/marianoor/.gradle/caches/transforms-4/5526540edb9632d0cbb6479436703845/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+64
+65    <uses-permission android:name="com.OfferBoat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+65-->[androidx.core:core:1.12.0] /Users/marianoor/.gradle/caches/transforms-4/5526540edb9632d0cbb6479436703845/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+65-->[androidx.core:core:1.12.0] /Users/marianoor/.gradle/caches/transforms-4/5526540edb9632d0cbb6479436703845/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+66    <uses-permission android:name="android.permission.VIBRATE" />
+66-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:13:5-66
+66-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:13:22-63
+67    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+67-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:16:5-81
+67-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:16:22-78
+68    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+68-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:17:5-79
+68-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:17:22-76
+69    <uses-permission
+69-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:18:5-20:38
+70        android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"
+70-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:19:9-73
+71        android:maxSdkVersion="30" /> <!-- For Xiaomi devices to enable heads-up notifications as default (https://github.com/invertase/notifee/issues/296) -->
+71-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:20:9-35
+72    <uses-permission
+72-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:22:5-24:38
+73        android:name="android.permission.ACCESS_NOTIFICATION_POLICY"
+73-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:23:9-69
+74        android:minSdkVersion="23" />
+74-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:24:9-35
+75
+76    <application
+76-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:15:5-66:19
+77        android:name="com.OfferBoat.MainApplication"
+77-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:16:7-38
+78        android:allowBackup="false"
+78-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:20:7-34
+79        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+79-->[androidx.core:core:1.12.0] /Users/marianoor/.gradle/caches/transforms-4/5526540edb9632d0cbb6479436703845/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+80        android:extractNativeLibs="false"
+81        android:icon="@mipmap/ic_launcher"
+81-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:18:7-41
+82        android:label="@string/app_name"
+82-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:17:7-39
+83        android:roundIcon="@mipmap/ic_launcher_round"
+83-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:19:7-52
+84        android:theme="@style/AppTheme"
+84-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:22:7-38
+85        android:usesCleartextTraffic="true" >
+85-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:21:7-42
+86        <meta-data
+86-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:23:8-25:63
+87            android:name="com.google.android.geo.API_KEY"
+87-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:24:6-51
+88            android:value="AIzaSyDiY4TiK....8nYjMpxxQ3Gxig" />
+88-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:25:6-61
+89
+90        <activity
+90-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:26:7-46:18
+91            android:name="com.OfferBoat.MainActivity"
+91-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:27:9-37
+92            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+92-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:29:9-118
+93            android:exported="true"
+93-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:33:9-32
+94            android:label="@string/app_name"
+94-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:28:9-41
+95            android:launchMode="singleTask"
+95-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:30:9-40
+96            android:screenOrientation="portrait"
+96-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:32:9-45
+97            android:windowSoftInputMode="adjustResize" >
+97-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:31:9-51
+98            <intent-filter android:autoVerify="true" >
+98-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:34:9-37:25
+98-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:34:24-49
+99                <action android:name="android.intent.action.MAIN" />
+99-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:35:13-65
+99-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:35:21-62
+100
+101                <category android:name="android.intent.category.LAUNCHER" />
+101-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:36:13-73
+101-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:36:23-70
+102            </intent-filter>
+103            <intent-filter android:autoVerify="true" >
+103-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:38:2-45:17
+103-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:38:17-42
+104                <action android:name="android.intent.action.VIEW" />
+104-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:39:5-57
+104-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:39:13-54
+105
+106                <category android:name="android.intent.category.DEFAULT" />
+106-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:40:5-64
+106-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:40:15-61
+107                <category android:name="android.intent.category.BROWSABLE" />
+107-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:41:5-66
+107-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:41:15-63
+108
+109                <data android:scheme="http" />
+109-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:5-35
+109-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:11-32
+110                <data android:scheme="https" />
+110-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:5-35
+110-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:11-32
+111                <data
+111-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:5-35
+112                    android:host="www.offerboat.com"
+112-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:44:11-43
+113                    android:pathPrefix="/app/" />
+113-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:44:44-70
+114            </intent-filter>
+115        </activity>
+116
+117        <service
+117-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:47:6-54:11
+118            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService"
+118-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:48:5-87
+119            android:exported="true" >
+119-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:49:5-28
+120            <intent-filter>
+120-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:51:5-53:21
+121                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+121-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:52:9-69
+121-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:52:17-67
+122            </intent-filter>
+123        </service>
+124
+125        <receiver
+125-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:56:1-64:12
+126            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver"
+126-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:57:5-88
+127            android:directBootAware="true"
+127-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:59:5-35
+128            android:exported="true"
+128-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:58:5-28
+129            android:permission="com.google.android.c2dm.permission.SEND" >
+129-->[:react-native-firebase_messaging] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-73
+130            <intent-filter>
+130-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:61:5-63:21
+131                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+131-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:62:9-71
+131-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:62:17-69
+132            </intent-filter>
+133            <intent-filter>
+133-->[:react-native-firebase_messaging] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-29:29
+134                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+134-->[:react-native-firebase_messaging] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:17-81
+134-->[:react-native-firebase_messaging] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:25-78
+135            </intent-filter>
+136        </receiver>
+137
+138        <provider
+138-->[:notifee_react-native] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@notifee/react-native/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:9-12:40
+139            android:name="io.invertase.notifee.NotifeeInitProvider"
+139-->[:notifee_react-native] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@notifee/react-native/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-68
+140            android:authorities="com.OfferBoat.notifee-init-provider"
+140-->[:notifee_react-native] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@notifee/react-native/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:13-73
+141            android:exported="false"
+141-->[:notifee_react-native] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@notifee/react-native/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-37
+142            android:initOrder="-100" />
+142-->[:notifee_react-native] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@notifee/react-native/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-37
+143        <provider
+143-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:29:9-37:20
+144            android:name="androidx.startup.InitializationProvider"
+144-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:30:13-67
+145            android:authorities="com.OfferBoat.androidx-startup"
+145-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:31:13-68
+146            android:exported="false" >
+146-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:32:13-37
+147            <meta-data
+147-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:34:13-36:52
+148                android:name="androidx.work.WorkManagerInitializer"
+148-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:35:17-68
+149                android:value="androidx.startup" />
+149-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:36:17-49
+150            <meta-data
+150-->[androidx.emoji2:emoji2:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/d88ca163dcbc433572ebffbd8a1b3f1a/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+151                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+151-->[androidx.emoji2:emoji2:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/d88ca163dcbc433572ebffbd8a1b3f1a/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+152                android:value="androidx.startup" />
+152-->[androidx.emoji2:emoji2:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/d88ca163dcbc433572ebffbd8a1b3f1a/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+153            <meta-data
+153-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/marianoor/.gradle/caches/transforms-4/fb2d6cd91ecfa5f4891fad18c1ed8cb0/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+154                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+154-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/marianoor/.gradle/caches/transforms-4/fb2d6cd91ecfa5f4891fad18c1ed8cb0/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+155                android:value="androidx.startup" />
+155-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/marianoor/.gradle/caches/transforms-4/fb2d6cd91ecfa5f4891fad18c1ed8cb0/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+156            <meta-data
+156-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+157                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+157-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+158                android:value="androidx.startup" />
+158-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+159        </provider>
+160
+161        <service
+161-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:39:9-45:35
+162            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+162-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:40:13-88
+163            android:directBootAware="false"
+163-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:41:13-44
+164            android:enabled="@bool/enable_system_alarm_service_default"
+164-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:42:13-72
+165            android:exported="false" />
+165-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:43:13-37
+166        <service
+166-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:46:9-52:35
+167            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+167-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:47:13-84
+168            android:directBootAware="false"
+168-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:48:13-44
+169            android:enabled="@bool/enable_system_job_service_default"
+169-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:49:13-70
+170            android:exported="true"
+170-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:50:13-36
+171            android:permission="android.permission.BIND_JOB_SERVICE" />
+171-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:51:13-69
+172        <service
+172-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:53:9-59:35
+173            android:name="androidx.work.impl.foreground.SystemForegroundService"
+173-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:54:13-81
+174            android:directBootAware="false"
+174-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:55:13-44
+175            android:enabled="@bool/enable_system_foreground_service_default"
+175-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:56:13-77
+176            android:exported="false" />
+176-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:57:13-37
+177
+178        <receiver
+178-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:61:9-66:35
+179            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+179-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:62:13-88
+180            android:directBootAware="false"
+180-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:63:13-44
+181            android:enabled="true"
+181-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:64:13-35
+182            android:exported="false" />
+182-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:65:13-37
+183        <receiver
+183-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:67:9-77:20
+184            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+184-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:68:13-106
+185            android:directBootAware="false"
+185-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:69:13-44
+186            android:enabled="false"
+186-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:70:13-36
+187            android:exported="false" >
+187-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:71:13-37
+188            <intent-filter>
+188-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:73:13-76:29
+189                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+189-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:74:17-87
+189-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:74:25-84
+190                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+190-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:75:17-90
+190-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:75:25-87
+191            </intent-filter>
+192        </receiver>
+193        <receiver
+193-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:78:9-88:20
+194            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+194-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:79:13-104
+195            android:directBootAware="false"
+195-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:80:13-44
+196            android:enabled="false"
+196-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:81:13-36
+197            android:exported="false" >
+197-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:82:13-37
+198            <intent-filter>
+198-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:84:13-87:29
+199                <action android:name="android.intent.action.BATTERY_OKAY" />
+199-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:85:17-77
+199-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:85:25-74
+200                <action android:name="android.intent.action.BATTERY_LOW" />
+200-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:86:17-76
+200-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:86:25-73
+201            </intent-filter>
+202        </receiver>
+203        <receiver
+203-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:89:9-99:20
+204            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+204-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:90:13-104
+205            android:directBootAware="false"
+205-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:91:13-44
+206            android:enabled="false"
+206-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:92:13-36
+207            android:exported="false" >
+207-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:93:13-37
+208            <intent-filter>
+208-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:95:13-98:29
+209                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+209-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:96:17-83
+209-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:96:25-80
+210                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+210-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:97:17-82
+210-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:97:25-79
+211            </intent-filter>
+212        </receiver>
+213        <receiver
+213-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:100:9-109:20
+214            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+214-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:101:13-103
+215            android:directBootAware="false"
+215-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:102:13-44
+216            android:enabled="false"
+216-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:103:13-36
+217            android:exported="false" >
+217-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:104:13-37
+218            <intent-filter>
+218-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:106:13-108:29
+219                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+219-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:107:17-79
+219-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:107:25-76
+220            </intent-filter>
+221        </receiver>
+222        <receiver
+222-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:110:9-121:20
+223            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+223-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:111:13-88
+224            android:directBootAware="false"
+224-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:112:13-44
+225            android:enabled="false"
+225-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:113:13-36
+226            android:exported="false" >
+226-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:114:13-37
+227            <intent-filter>
+227-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:116:13-120:29
+228                <action android:name="android.intent.action.BOOT_COMPLETED" />
+228-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:117:17-79
+228-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:117:25-76
+229                <action android:name="android.intent.action.TIME_SET" />
+229-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:118:17-73
+229-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:118:25-70
+230                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+230-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:119:17-81
+230-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:119:25-78
+231            </intent-filter>
+232        </receiver>
+233        <receiver
+233-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:122:9-131:20
+234            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+234-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:123:13-99
+235            android:directBootAware="false"
+235-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:124:13-44
+236            android:enabled="@bool/enable_system_alarm_service_default"
+236-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:125:13-72
+237            android:exported="false" >
+237-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:126:13-37
+238            <intent-filter>
+238-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:128:13-130:29
+239                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+239-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:129:17-98
+239-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:129:25-95
+240            </intent-filter>
+241        </receiver>
+242        <receiver
+242-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:132:9-142:20
+243            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+243-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:133:13-78
+244            android:directBootAware="false"
+244-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:134:13-44
+245            android:enabled="true"
+245-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:135:13-35
+246            android:exported="true"
+246-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:136:13-36
+247            android:permission="android.permission.DUMP" >
+247-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:137:13-57
+248            <intent-filter>
+248-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:139:13-141:29
+249                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+249-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:140:17-88
+249-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:140:25-85
+250            </intent-filter>
+251        </receiver>
+252
+253        <service
+253-->[androidx.room:room-runtime:2.5.0] /Users/marianoor/.gradle/caches/transforms-4/ea8d9f115e29707f9c267d01549c3da6/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
+254            android:name="androidx.room.MultiInstanceInvalidationService"
+254-->[androidx.room:room-runtime:2.5.0] /Users/marianoor/.gradle/caches/transforms-4/ea8d9f115e29707f9c267d01549c3da6/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
+255            android:directBootAware="true"
+255-->[androidx.room:room-runtime:2.5.0] /Users/marianoor/.gradle/caches/transforms-4/ea8d9f115e29707f9c267d01549c3da6/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
+256            android:exported="false" />
+256-->[androidx.room:room-runtime:2.5.0] /Users/marianoor/.gradle/caches/transforms-4/ea8d9f115e29707f9c267d01549c3da6/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
+257
+258        <activity
+258-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:8:9-11:69
+259            android:name="com.stripe.android.paymentsheet.PaymentSheetActivity"
+259-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:9:13-80
+260            android:exported="false"
+260-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:10:13-37
+261            android:theme="@style/StripePaymentSheetDefaultTheme" />
+261-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:11:13-66
+262        <activity
+262-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:12:9-15:69
+263            android:name="com.stripe.android.paymentsheet.PaymentOptionsActivity"
+263-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:13:13-82
+264            android:exported="false"
+264-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:14:13-37
+265            android:theme="@style/StripePaymentSheetDefaultTheme" />
+265-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:15:13-66
+266        <activity
+266-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:16:9-19:69
+267            android:name="com.stripe.android.customersheet.CustomerSheetActivity"
+267-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:17:13-82
+268            android:exported="false"
+268-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:18:13-37
+269            android:theme="@style/StripePaymentSheetDefaultTheme" />
+269-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:19:13-66
+270        <activity
+270-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:20:9-23:69
+271            android:name="com.stripe.android.paymentsheet.addresselement.AddressElementActivity"
+271-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:21:13-97
+272            android:exported="false"
+272-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:22:13-37
+273            android:theme="@style/StripePaymentSheetDefaultTheme" />
+273-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:23:13-66
+274        <activity
+274-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:24:9-27:69
+275            android:name="com.stripe.android.paymentsheet.paymentdatacollection.bacs.BacsMandateConfirmationActivity"
+275-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:25:13-118
+276            android:exported="false"
+276-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:26:13-37
+277            android:theme="@style/StripePaymentSheetDefaultTheme" />
+277-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:27:13-66
+278        <activity
+278-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:28:9-31:69
+279            android:name="com.stripe.android.paymentsheet.paymentdatacollection.polling.PollingActivity"
+279-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:29:13-105
+280            android:exported="false"
+280-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:30:13-37
+281            android:theme="@style/StripePaymentSheetDefaultTheme" />
+281-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:31:13-66
+282        <activity
+282-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:32:9-35:69
+283            android:name="com.stripe.android.paymentsheet.ui.SepaMandateActivity"
+283-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:33:13-82
+284            android:exported="false"
+284-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:34:13-37
+285            android:theme="@style/StripePaymentSheetDefaultTheme" />
+285-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:35:13-66
+286        <activity
+286-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:36:9-39:68
+287            android:name="com.stripe.android.paymentsheet.ExternalPaymentMethodProxyActivity"
+287-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:37:13-94
+288            android:exported="false"
+288-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:38:13-37
+289            android:theme="@style/StripePayLauncherDefaultTheme" />
+289-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:39:13-65
+290        <activity
+290-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:40:9-42:69
+291            android:name="com.stripe.android.paymentsheet.paymentdatacollection.cvcrecollection.CvcRecollectionActivity"
+291-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:41:13-121
+292            android:theme="@style/StripePaymentSheetDefaultTheme" />
+292-->[com.stripe:paymentsheet:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/ecf06d7c55e59fc0d175b24bf87eeef5/transformed/jetified-paymentsheet-20.48.6/AndroidManifest.xml:42:13-66
+293        <activity
+293-->[com.stripe:link:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/7ac27e35eaa3de0a16eb32242b70dac0/transformed/jetified-link-20.48.6/AndroidManifest.xml:8:9-13:61
+294            android:name="com.stripe.android.link.LinkForegroundActivity"
+294-->[com.stripe:link:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/7ac27e35eaa3de0a16eb32242b70dac0/transformed/jetified-link-20.48.6/AndroidManifest.xml:9:13-74
+295            android:autoRemoveFromRecents="true"
+295-->[com.stripe:link:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/7ac27e35eaa3de0a16eb32242b70dac0/transformed/jetified-link-20.48.6/AndroidManifest.xml:10:13-49
+296            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize"
+296-->[com.stripe:link:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/7ac27e35eaa3de0a16eb32242b70dac0/transformed/jetified-link-20.48.6/AndroidManifest.xml:11:13-115
+297            android:launchMode="singleTop"
+297-->[com.stripe:link:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/7ac27e35eaa3de0a16eb32242b70dac0/transformed/jetified-link-20.48.6/AndroidManifest.xml:12:13-43
+298            android:theme="@style/StripeTransparentTheme" />
+298-->[com.stripe:link:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/7ac27e35eaa3de0a16eb32242b70dac0/transformed/jetified-link-20.48.6/AndroidManifest.xml:13:13-58
+299        <activity
+299-->[com.stripe:link:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/7ac27e35eaa3de0a16eb32242b70dac0/transformed/jetified-link-20.48.6/AndroidManifest.xml:14:9-31:20
+300            android:name="com.stripe.android.link.LinkRedirectHandlerActivity"
+300-->[com.stripe:link:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/7ac27e35eaa3de0a16eb32242b70dac0/transformed/jetified-link-20.48.6/AndroidManifest.xml:15:13-79
+301            android:autoRemoveFromRecents="true"
+301-->[com.stripe:link:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/7ac27e35eaa3de0a16eb32242b70dac0/transformed/jetified-link-20.48.6/AndroidManifest.xml:16:13-49
+302            android:exported="true"
+302-->[com.stripe:link:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/7ac27e35eaa3de0a16eb32242b70dac0/transformed/jetified-link-20.48.6/AndroidManifest.xml:17:13-36
+303            android:launchMode="singleInstance"
+303-->[com.stripe:link:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/7ac27e35eaa3de0a16eb32242b70dac0/transformed/jetified-link-20.48.6/AndroidManifest.xml:18:13-48
+304            android:theme="@style/StripeTransparentTheme" >
+304-->[com.stripe:link:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/7ac27e35eaa3de0a16eb32242b70dac0/transformed/jetified-link-20.48.6/AndroidManifest.xml:19:13-58
+305            <intent-filter>
+305-->[com.stripe:link:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/7ac27e35eaa3de0a16eb32242b70dac0/transformed/jetified-link-20.48.6/AndroidManifest.xml:20:13-30:29
+306                <action android:name="android.intent.action.VIEW" />
+306-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:39:5-57
+306-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:39:13-54
+307
+308                <category android:name="android.intent.category.DEFAULT" />
+308-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:40:5-64
+308-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:40:15-61
+309                <category android:name="android.intent.category.BROWSABLE" />
+309-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:41:5-66
+309-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:41:15-63
+310
+311                <data
+311-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:5-35
+312                    android:host="complete"
+312-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:44:11-43
+313                    android:path="/com.OfferBoat"
+314                    android:scheme="link-popup" />
+314-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:11-32
+315            </intent-filter>
+316        </activity>
+317        <activity
+317-->[com.stripe:payments-ui-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/6da5ae33ae6a6aaeec586befaf13c11e/transformed/jetified-payments-ui-core-20.48.6/AndroidManifest.xml:8:9-11:69
+318            android:name="com.stripe.android.ui.core.cardscan.CardScanActivity"
+318-->[com.stripe:payments-ui-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/6da5ae33ae6a6aaeec586befaf13c11e/transformed/jetified-payments-ui-core-20.48.6/AndroidManifest.xml:9:13-80
+319            android:exported="false"
+319-->[com.stripe:payments-ui-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/6da5ae33ae6a6aaeec586befaf13c11e/transformed/jetified-payments-ui-core-20.48.6/AndroidManifest.xml:10:13-37
+320            android:theme="@style/StripePaymentSheetDefaultTheme" />
+320-->[com.stripe:payments-ui-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/6da5ae33ae6a6aaeec586befaf13c11e/transformed/jetified-payments-ui-core-20.48.6/AndroidManifest.xml:11:13-66
+321        <activity
+321-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:15:9-18:57
+322            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+322-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:16:13-76
+323            android:exported="false"
+323-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:17:13-37
+324            android:theme="@style/StripeDefaultTheme" />
+324-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:18:13-54
+325        <activity
+325-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:19:9-22:57
+326            android:name="com.stripe.android.view.PaymentMethodsActivity"
+326-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:20:13-74
+327            android:exported="false"
+327-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:21:13-37
+328            android:theme="@style/StripeDefaultTheme" />
+328-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:22:13-54
+329        <activity
+329-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:23:9-26:57
+330            android:name="com.stripe.android.view.PaymentFlowActivity"
+330-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:24:13-71
+331            android:exported="false"
+331-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:25:13-37
+332            android:theme="@style/StripeDefaultTheme" />
+332-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:26:13-54
+333        <activity
+333-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:27:9-30:57
+334            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+334-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:28:13-78
+335            android:exported="false"
+335-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:29:13-37
+336            android:theme="@style/StripeDefaultTheme" />
+336-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:30:13-54
+337        <activity
+337-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:31:9-34:61
+338            android:name="com.stripe.android.view.PaymentRelayActivity"
+338-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:32:13-72
+339            android:exported="false"
+339-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:33:13-37
+340            android:theme="@style/StripeTransparentTheme" />
+340-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:34:13-58
+341        <!--
+342        Set android:launchMode="singleTop" so that the StripeBrowserLauncherActivity instance that
+343        launched the browser Activity will also handle the return URL deep link.
+344        -->
+345        <activity
+345-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:40:9-44:61
+346            android:name="com.stripe.android.payments.StripeBrowserLauncherActivity"
+346-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:41:13-85
+347            android:exported="false"
+347-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:42:13-37
+348            android:launchMode="singleTask"
+348-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:43:13-44
+349            android:theme="@style/StripeTransparentTheme" />
+349-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:44:13-58
+350        <activity
+350-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:45:9-62:20
+351            android:name="com.stripe.android.payments.StripeBrowserProxyReturnActivity"
+351-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:46:13-88
+352            android:exported="true"
+352-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:47:13-36
+353            android:launchMode="singleTask"
+353-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:48:13-44
+354            android:theme="@style/StripeTransparentTheme" >
+354-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:49:13-58
+355            <intent-filter>
+355-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:50:13-61:29
+356                <action android:name="android.intent.action.VIEW" />
+356-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:39:5-57
+356-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:39:13-54
+357
+358                <category android:name="android.intent.category.DEFAULT" />
+358-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:40:5-64
+358-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:40:15-61
+359                <category android:name="android.intent.category.BROWSABLE" />
+359-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:41:5-66
+359-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:41:15-63
+360
+361                <!-- Must match `DefaultReturnUrl#value`. -->
+362                <data
+362-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:5-35
+363                    android:host="payment_return_url"
+363-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:44:11-43
+364                    android:path="/com.OfferBoat"
+365                    android:scheme="stripesdk" />
+365-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:11-32
+366            </intent-filter>
+367        </activity>
+368        <activity
+368-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:63:9-66:57
+369            android:name="com.stripe.android.payments.core.authentication.threeds2.Stripe3ds2TransactionActivity"
+369-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:64:13-114
+370            android:exported="false"
+370-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:65:13-37
+371            android:theme="@style/StripeDefaultTheme" />
+371-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:66:13-54
+372        <activity
+372-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:67:9-70:66
+373            android:name="com.stripe.android.googlepaylauncher.GooglePayLauncherActivity"
+373-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:68:13-90
+374            android:exported="false"
+374-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:69:13-37
+375            android:theme="@style/StripeGooglePayDefaultTheme" />
+375-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:70:13-63
+376        <activity
+376-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:71:9-74:66
+377            android:name="com.stripe.android.googlepaylauncher.GooglePayPaymentMethodLauncherActivity"
+377-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:72:13-103
+378            android:exported="false"
+378-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:73:13-37
+379            android:theme="@style/StripeGooglePayDefaultTheme" />
+379-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:74:13-63
+380        <activity
+380-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:75:9-78:68
+381            android:name="com.stripe.android.payments.paymentlauncher.PaymentLauncherConfirmationActivity"
+381-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:76:13-107
+382            android:exported="false"
+382-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:77:13-37
+383            android:theme="@style/StripePayLauncherDefaultTheme" />
+383-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:78:13-65
+384        <activity
+384-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:79:9-82:61
+385            android:name="com.stripe.android.payments.bankaccount.ui.CollectBankAccountActivity"
+385-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:80:13-97
+386            android:exported="false"
+386-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:81:13-37
+387            android:theme="@style/StripeTransparentTheme" />
+387-->[com.stripe:payments-core:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/dabeea32b646b68d2392cedf1db35e93/transformed/jetified-payments-core-20.48.6/AndroidManifest.xml:82:13-58
+388        <activity
+388-->[com.stripe:stripe-3ds2-android:6.1.8] /Users/marianoor/.gradle/caches/transforms-4/46c957b74f7127e32ac61a1e05515872/transformed/jetified-stripe-3ds2-android-6.1.8/AndroidManifest.xml:8:9-11:54
+389            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+389-->[com.stripe:stripe-3ds2-android:6.1.8] /Users/marianoor/.gradle/caches/transforms-4/46c957b74f7127e32ac61a1e05515872/transformed/jetified-stripe-3ds2-android-6.1.8/AndroidManifest.xml:9:13-81
+390            android:exported="false"
+390-->[com.stripe:stripe-3ds2-android:6.1.8] /Users/marianoor/.gradle/caches/transforms-4/46c957b74f7127e32ac61a1e05515872/transformed/jetified-stripe-3ds2-android-6.1.8/AndroidManifest.xml:10:13-37
+391            android:theme="@style/Stripe3DS2Theme" />
+391-->[com.stripe:stripe-3ds2-android:6.1.8] /Users/marianoor/.gradle/caches/transforms-4/46c957b74f7127e32ac61a1e05515872/transformed/jetified-stripe-3ds2-android-6.1.8/AndroidManifest.xml:11:13-51
+392        <activity
+392-->[com.stripe:financial-connections:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/47f9c71e908be3409172efbe400dc20f/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:21:9-65:20
+393            android:name="com.stripe.android.financialconnections.FinancialConnectionsSheetRedirectActivity"
+393-->[com.stripe:financial-connections:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/47f9c71e908be3409172efbe400dc20f/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:22:13-109
+394            android:exported="true"
+394-->[com.stripe:financial-connections:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/47f9c71e908be3409172efbe400dc20f/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:23:13-36
+395            android:launchMode="singleTask" >
+395-->[com.stripe:financial-connections:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/47f9c71e908be3409172efbe400dc20f/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:24:13-44
+396            <intent-filter>
+396-->[com.stripe:financial-connections:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/47f9c71e908be3409172efbe400dc20f/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:25:13-64:29
+397                <action android:name="android.intent.action.VIEW" />
+397-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:39:5-57
+397-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:39:13-54
+398
+399                <category android:name="android.intent.category.DEFAULT" />
+399-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:40:5-64
+399-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:40:15-61
+400                <category android:name="android.intent.category.BROWSABLE" />
+400-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:41:5-66
+400-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:41:15-63
+401
+402                <!-- Returning from app2app: return_url is triggered to reopen web AuthFlow and poll accounts. -->
+403                <data
+403-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:5-35
+404                    android:host="link-accounts"
+404-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:44:11-43
+405                    android:pathPrefix="/com.OfferBoat/authentication_return"
+405-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:44:44-70
+406                    android:scheme="stripe-auth" />
+406-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:11-32
+407
+408                <!-- Returning from app2app: return_url is triggered to reopen native AuthFlow and poll accounts. -->
+409                <data
+409-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:5-35
+410                    android:host="link-native-accounts"
+410-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:44:11-43
+411                    android:pathPrefix="/com.OfferBoat/authentication_return"
+411-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:44:44-70
+412                    android:scheme="stripe-auth" />
+412-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:11-32
+413
+414                <!-- End of web AuthFlow success and cancel URIs that begin with "stripe-auth://link-accounts/{app-id}/...” -->
+415                <data
+415-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:5-35
+416                    android:host="link-accounts"
+416-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:44:11-43
+417                    android:path="/com.OfferBoat/success"
+418                    android:scheme="stripe-auth" />
+418-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:11-32
+419                <data
+419-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:5-35
+420                    android:host="link-accounts"
+420-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:44:11-43
+421                    android:path="/com.OfferBoat/cancel"
+422                    android:scheme="stripe-auth" />
+422-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:11-32
+423
+424                <!-- Opening app2app: Web flow triggers stripe-auth://native-redirect/{app-id}/http://web-that-redirects-to-native -->
+425                <data
+425-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:5-35
+426                    android:host="native-redirect"
+426-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:44:11-43
+427                    android:pathPrefix="/com.OfferBoat"
+427-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:44:44-70
+428                    android:scheme="stripe-auth" />
+428-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:11-32
+429
+430                <!-- Accepts success/cancel/fail URIs that begin with "stripe://auth-redirect” -->
+431                <data
+431-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:5-35
+432                    android:host="auth-redirect"
+432-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:44:11-43
+433                    android:pathPrefix="/com.OfferBoat"
+433-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:44:44-70
+434                    android:scheme="stripe" />
+434-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:11-32
+435            </intent-filter>
+436        </activity>
+437        <activity
+437-->[com.stripe:financial-connections:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/47f9c71e908be3409172efbe400dc20f/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:66:9-69:77
+438            android:name="com.stripe.android.financialconnections.FinancialConnectionsSheetActivity"
+438-->[com.stripe:financial-connections:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/47f9c71e908be3409172efbe400dc20f/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:67:13-101
+439            android:exported="false"
+439-->[com.stripe:financial-connections:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/47f9c71e908be3409172efbe400dc20f/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:68:13-37
+440            android:theme="@style/StripeFinancialConnectionsDefaultTheme" />
+440-->[com.stripe:financial-connections:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/47f9c71e908be3409172efbe400dc20f/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:69:13-74
+441        <activity
+441-->[com.stripe:financial-connections:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/47f9c71e908be3409172efbe400dc20f/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:70:9-74:58
+442            android:name="com.stripe.android.financialconnections.ui.FinancialConnectionsSheetNativeActivity"
+442-->[com.stripe:financial-connections:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/47f9c71e908be3409172efbe400dc20f/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:71:13-110
+443            android:exported="false"
+443-->[com.stripe:financial-connections:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/47f9c71e908be3409172efbe400dc20f/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:72:13-37
+444            android:theme="@style/StripeFinancialConnectionsDefaultTheme"
+444-->[com.stripe:financial-connections:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/47f9c71e908be3409172efbe400dc20f/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:73:13-74
+445            android:windowSoftInputMode="adjustResize" />
+445-->[com.stripe:financial-connections:20.48.6] /Users/marianoor/.gradle/caches/transforms-4/47f9c71e908be3409172efbe400dc20f/transformed/jetified-financial-connections-20.48.6/AndroidManifest.xml:74:13-55
+446
+447        <service
+447-->[:react-native-firebase_messaging] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-14:40
+448            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService"
+448-->[:react-native-firebase_messaging] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-103
+449            android:exported="false" />
+449-->[:react-native-firebase_messaging] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-37
+450
+451        <meta-data
+451-->[:react-native-firebase_messaging] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:32:9-34:36
+452            android:name="firebase_messaging_auto_init_enabled"
+452-->[:react-native-firebase_messaging] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:33:13-64
+453            android:value="true" />
+453-->[:react-native-firebase_messaging] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:34:13-33
+454        <meta-data
+454-->[:react-native-firebase_messaging] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:35:9-37:32
+455            android:name="com.google.firebase.messaging.default_notification_channel_id"
+455-->[:react-native-firebase_messaging] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:36:13-89
+456            android:value="" />
+456-->[:react-native-firebase_messaging] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:37:13-29
+457        <meta-data
+457-->[:react-native-firebase_messaging] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:38:9-40:47
+458            android:name="com.google.firebase.messaging.default_notification_color"
+458-->[:react-native-firebase_messaging] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:39:13-84
+459            android:resource="@color/white" />
+459-->[:react-native-firebase_messaging] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:40:13-44
+460        <meta-data
+460-->[:react-native-firebase_app] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:9-11:36
+461            android:name="app_data_collection_default_enabled"
+461-->[:react-native-firebase_app] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:13-63
+462            android:value="true" />
+462-->[:react-native-firebase_app] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-33
+463
+464        <service
+464-->[:react-native-firebase_app] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:9-21:19
+465            android:name="com.google.firebase.components.ComponentDiscoveryService"
+465-->[:react-native-firebase_app] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-84
+466            android:directBootAware="true"
+466-->[:react-native-firebase_app] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-43
+467            android:exported="false" >
+467-->[:react-native-firebase_app] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-37
+468            <meta-data
+468-->[:react-native-firebase_app] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-20:85
+469                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
+469-->[:react-native-firebase_app] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:17-120
+470                android:value="com.google.firebase.components.ComponentRegistrar" />
+470-->[:react-native-firebase_app] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:17-82
+471            <meta-data
+471-->[com.google.firebase:firebase-auth:23.0.0] /Users/marianoor/.gradle/caches/transforms-4/169469dd7b202ce8338a4e8c1686dc47/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:69:13-71:85
+472                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+472-->[com.google.firebase:firebase-auth:23.0.0] /Users/marianoor/.gradle/caches/transforms-4/169469dd7b202ce8338a4e8c1686dc47/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:70:17-109
+473                android:value="com.google.firebase.components.ComponentRegistrar" />
+473-->[com.google.firebase:firebase-auth:23.0.0] /Users/marianoor/.gradle/caches/transforms-4/169469dd7b202ce8338a4e8c1686dc47/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:71:17-82
+474            <meta-data
+474-->[com.google.firebase:firebase-messaging:24.0.0] /Users/marianoor/.gradle/caches/transforms-4/05f0cbac9d8b79cd08eeb1f04d7e9ad7/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:57:13-59:85
+475                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+475-->[com.google.firebase:firebase-messaging:24.0.0] /Users/marianoor/.gradle/caches/transforms-4/05f0cbac9d8b79cd08eeb1f04d7e9ad7/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:58:17-122
+476                android:value="com.google.firebase.components.ComponentRegistrar" />
+476-->[com.google.firebase:firebase-messaging:24.0.0] /Users/marianoor/.gradle/caches/transforms-4/05f0cbac9d8b79cd08eeb1f04d7e9ad7/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:59:17-82
+477            <meta-data
+477-->[com.google.firebase:firebase-messaging:24.0.0] /Users/marianoor/.gradle/caches/transforms-4/05f0cbac9d8b79cd08eeb1f04d7e9ad7/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:60:13-62:85
+478                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+478-->[com.google.firebase:firebase-messaging:24.0.0] /Users/marianoor/.gradle/caches/transforms-4/05f0cbac9d8b79cd08eeb1f04d7e9ad7/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:61:17-119
+479                android:value="com.google.firebase.components.ComponentRegistrar" />
+479-->[com.google.firebase:firebase-messaging:24.0.0] /Users/marianoor/.gradle/caches/transforms-4/05f0cbac9d8b79cd08eeb1f04d7e9ad7/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:62:17-82
+480            <meta-data
+480-->[com.google.firebase:firebase-installations:18.0.0] /Users/marianoor/.gradle/caches/transforms-4/54d9d553d7a3c8cd1cdbdef2afdcd4e2/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:15:13-17:85
+481                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+481-->[com.google.firebase:firebase-installations:18.0.0] /Users/marianoor/.gradle/caches/transforms-4/54d9d553d7a3c8cd1cdbdef2afdcd4e2/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:16:17-130
+482                android:value="com.google.firebase.components.ComponentRegistrar" />
+482-->[com.google.firebase:firebase-installations:18.0.0] /Users/marianoor/.gradle/caches/transforms-4/54d9d553d7a3c8cd1cdbdef2afdcd4e2/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:17:17-82
+483            <meta-data
+483-->[com.google.firebase:firebase-installations:18.0.0] /Users/marianoor/.gradle/caches/transforms-4/54d9d553d7a3c8cd1cdbdef2afdcd4e2/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:18:13-20:85
+484                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+484-->[com.google.firebase:firebase-installations:18.0.0] /Users/marianoor/.gradle/caches/transforms-4/54d9d553d7a3c8cd1cdbdef2afdcd4e2/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:19:17-127
+485                android:value="com.google.firebase.components.ComponentRegistrar" />
+485-->[com.google.firebase:firebase-installations:18.0.0] /Users/marianoor/.gradle/caches/transforms-4/54d9d553d7a3c8cd1cdbdef2afdcd4e2/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:20:17-82
+486            <meta-data
+486-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/marianoor/.gradle/caches/transforms-4/28fa842d0a7a18040aa34710d52c7faa/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+487                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+487-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/marianoor/.gradle/caches/transforms-4/28fa842d0a7a18040aa34710d52c7faa/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+488                android:value="com.google.firebase.components.ComponentRegistrar" />
+488-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/marianoor/.gradle/caches/transforms-4/28fa842d0a7a18040aa34710d52c7faa/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+489            <meta-data
+489-->[com.google.firebase:firebase-common:21.0.0] /Users/marianoor/.gradle/caches/transforms-4/5e1a8530fd3974822bac3044e4fadb8c/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+490                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+490-->[com.google.firebase:firebase-common:21.0.0] /Users/marianoor/.gradle/caches/transforms-4/5e1a8530fd3974822bac3044e4fadb8c/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+491                android:value="com.google.firebase.components.ComponentRegistrar" />
+491-->[com.google.firebase:firebase-common:21.0.0] /Users/marianoor/.gradle/caches/transforms-4/5e1a8530fd3974822bac3044e4fadb8c/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+492            <meta-data
+492-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/marianoor/.gradle/caches/transforms-4/7d2b5f787f2918ddbd7950f6e9a2b03d/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:25:13-27:85
+493                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+493-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/marianoor/.gradle/caches/transforms-4/7d2b5f787f2918ddbd7950f6e9a2b03d/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:26:17-115
+494                android:value="com.google.firebase.components.ComponentRegistrar" />
+494-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/marianoor/.gradle/caches/transforms-4/7d2b5f787f2918ddbd7950f6e9a2b03d/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:27:17-82
+495        </service>
+496
+497        <provider
+497-->[:react-native-firebase_app] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:9-27:38
+498            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
+498-->[:react-native-firebase_app] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-88
+499            android:authorities="com.OfferBoat.reactnativefirebaseappinitprovider"
+499-->[:react-native-firebase_app] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:13-86
+500            android:exported="false"
+500-->[:react-native-firebase_app] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-37
+501            android:initOrder="99" />
+501-->[:react-native-firebase_app] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-35
+502        <provider
+502-->[:react-native-image-crop-picker] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-24:20
+503            android:name="com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider"
+503-->[:react-native-image-crop-picker] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-94
+504            android:authorities="com.OfferBoat.provider"
+504-->[:react-native-image-crop-picker] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-60
+505            android:exported="false"
+505-->[:react-native-image-crop-picker] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-37
+506            android:grantUriPermissions="true" >
+506-->[:react-native-image-crop-picker] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-47
+507            <meta-data
+507-->[:react-native-image-crop-picker] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-23:78
+508                android:name="android.support.FILE_PROVIDER_PATHS"
+508-->[:react-native-image-crop-picker] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:22:17-67
+509                android:resource="@xml/ivpusic_imagepicker_provider_paths" />
+509-->[:react-native-image-crop-picker] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:17-75
+510        </provider>
+511
+512        <activity
+512-->[:react-native-image-crop-picker] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:26:9-28:72
+513            android:name="com.yalantis.ucrop.UCropActivity"
+513-->[:react-native-image-crop-picker] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-60
+514            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+514-->[:react-native-image-crop-picker] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:13-69
+515
+516        <provider
+516-->[:react-native-share] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-share/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:8:9-16:20
+517            android:name="cl.json.RNShareFileProvider"
+517-->[:react-native-share] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-share/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-55
+518            android:authorities="com.OfferBoat.rnshare.fileprovider"
+518-->[:react-native-share] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-share/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:13-72
+519            android:exported="false"
+519-->[:react-native-share] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-share/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-37
+520            android:grantUriPermissions="true" >
+520-->[:react-native-share] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-share/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-47
+521            <meta-data
+521-->[:react-native-image-crop-picker] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-23:78
+522                android:name="android.support.FILE_PROVIDER_PATHS"
+522-->[:react-native-image-crop-picker] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:22:17-67
+523                android:resource="@xml/share_download_paths" />
+523-->[:react-native-image-crop-picker] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:17-75
+524        </provider>
+525
+526        <activity
+526-->[com.google.firebase:firebase-auth:23.0.0] /Users/marianoor/.gradle/caches/transforms-4/169469dd7b202ce8338a4e8c1686dc47/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:29:9-46:20
+527            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+527-->[com.google.firebase:firebase-auth:23.0.0] /Users/marianoor/.gradle/caches/transforms-4/169469dd7b202ce8338a4e8c1686dc47/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:30:13-80
+528            android:excludeFromRecents="true"
+528-->[com.google.firebase:firebase-auth:23.0.0] /Users/marianoor/.gradle/caches/transforms-4/169469dd7b202ce8338a4e8c1686dc47/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:31:13-46
+529            android:exported="true"
+529-->[com.google.firebase:firebase-auth:23.0.0] /Users/marianoor/.gradle/caches/transforms-4/169469dd7b202ce8338a4e8c1686dc47/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:32:13-36
+530            android:launchMode="singleTask"
+530-->[com.google.firebase:firebase-auth:23.0.0] /Users/marianoor/.gradle/caches/transforms-4/169469dd7b202ce8338a4e8c1686dc47/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:33:13-44
+531            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+531-->[com.google.firebase:firebase-auth:23.0.0] /Users/marianoor/.gradle/caches/transforms-4/169469dd7b202ce8338a4e8c1686dc47/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:34:13-72
+532            <intent-filter>
+532-->[com.google.firebase:firebase-auth:23.0.0] /Users/marianoor/.gradle/caches/transforms-4/169469dd7b202ce8338a4e8c1686dc47/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:35:13-45:29
+533                <action android:name="android.intent.action.VIEW" />
+533-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:39:5-57
+533-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:39:13-54
+534
+535                <category android:name="android.intent.category.DEFAULT" />
+535-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:40:5-64
+535-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:40:15-61
+536                <category android:name="android.intent.category.BROWSABLE" />
+536-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:41:5-66
+536-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:41:15-63
+537
+538                <data
+538-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:5-35
+539                    android:host="firebase.auth"
+539-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:44:11-43
+540                    android:path="/"
+541                    android:scheme="genericidp" />
+541-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:11-32
+542            </intent-filter>
+543        </activity>
+544        <activity
+544-->[com.google.firebase:firebase-auth:23.0.0] /Users/marianoor/.gradle/caches/transforms-4/169469dd7b202ce8338a4e8c1686dc47/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:47:9-64:20
+545            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+545-->[com.google.firebase:firebase-auth:23.0.0] /Users/marianoor/.gradle/caches/transforms-4/169469dd7b202ce8338a4e8c1686dc47/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:48:13-79
+546            android:excludeFromRecents="true"
+546-->[com.google.firebase:firebase-auth:23.0.0] /Users/marianoor/.gradle/caches/transforms-4/169469dd7b202ce8338a4e8c1686dc47/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:49:13-46
+547            android:exported="true"
+547-->[com.google.firebase:firebase-auth:23.0.0] /Users/marianoor/.gradle/caches/transforms-4/169469dd7b202ce8338a4e8c1686dc47/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:50:13-36
+548            android:launchMode="singleTask"
+548-->[com.google.firebase:firebase-auth:23.0.0] /Users/marianoor/.gradle/caches/transforms-4/169469dd7b202ce8338a4e8c1686dc47/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:51:13-44
+549            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+549-->[com.google.firebase:firebase-auth:23.0.0] /Users/marianoor/.gradle/caches/transforms-4/169469dd7b202ce8338a4e8c1686dc47/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:52:13-72
+550            <intent-filter>
+550-->[com.google.firebase:firebase-auth:23.0.0] /Users/marianoor/.gradle/caches/transforms-4/169469dd7b202ce8338a4e8c1686dc47/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:53:13-63:29
+551                <action android:name="android.intent.action.VIEW" />
+551-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:39:5-57
+551-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:39:13-54
+552
+553                <category android:name="android.intent.category.DEFAULT" />
+553-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:40:5-64
+553-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:40:15-61
+554                <category android:name="android.intent.category.BROWSABLE" />
+554-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:41:5-66
+554-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:41:15-63
+555
+556                <data
+556-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:5-35
+557                    android:host="firebase.auth"
+557-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:44:11-43
+558                    android:path="/"
+559                    android:scheme="recaptcha" />
+559-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:42:11-32
+560            </intent-filter>
+561        </activity>
+562
+563        <service
+563-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/marianoor/.gradle/caches/transforms-4/0352bcafe3e3ec0df1cb3355c71b1533/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:24:9-32:19
+564            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+564-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/marianoor/.gradle/caches/transforms-4/0352bcafe3e3ec0df1cb3355c71b1533/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:25:13-94
+565            android:enabled="true"
+565-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/marianoor/.gradle/caches/transforms-4/0352bcafe3e3ec0df1cb3355c71b1533/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:26:13-35
+566            android:exported="false" >
+566-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/marianoor/.gradle/caches/transforms-4/0352bcafe3e3ec0df1cb3355c71b1533/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:27:13-37
+567            <meta-data
+567-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/marianoor/.gradle/caches/transforms-4/0352bcafe3e3ec0df1cb3355c71b1533/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:29:13-31:104
+568                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+568-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/marianoor/.gradle/caches/transforms-4/0352bcafe3e3ec0df1cb3355c71b1533/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:30:17-76
+569                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+569-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/marianoor/.gradle/caches/transforms-4/0352bcafe3e3ec0df1cb3355c71b1533/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:31:17-101
+570        </service>
+571
+572        <activity
+572-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/marianoor/.gradle/caches/transforms-4/0352bcafe3e3ec0df1cb3355c71b1533/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:34:9-41:20
+573            android:name="androidx.credentials.playservices.HiddenActivity"
+573-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/marianoor/.gradle/caches/transforms-4/0352bcafe3e3ec0df1cb3355c71b1533/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:35:13-76
+574            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+574-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/marianoor/.gradle/caches/transforms-4/0352bcafe3e3ec0df1cb3355c71b1533/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:36:13-87
+575            android:enabled="true"
+575-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/marianoor/.gradle/caches/transforms-4/0352bcafe3e3ec0df1cb3355c71b1533/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:37:13-35
+576            android:exported="false"
+576-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/marianoor/.gradle/caches/transforms-4/0352bcafe3e3ec0df1cb3355c71b1533/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:38:13-37
+577            android:fitsSystemWindows="true"
+577-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/marianoor/.gradle/caches/transforms-4/0352bcafe3e3ec0df1cb3355c71b1533/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:39:13-45
+578            android:theme="@style/Theme.Hidden" >
+578-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /Users/marianoor/.gradle/caches/transforms-4/0352bcafe3e3ec0df1cb3355c71b1533/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:40:13-48
+579        </activity>
+580        <activity
+580-->[com.google.android.gms:play-services-auth:21.2.0] /Users/marianoor/.gradle/caches/transforms-4/b42e98ba17dd4c8069d6b0436ac25008/transformed/jetified-play-services-auth-21.2.0/AndroidManifest.xml:23:9-27:75
+581            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+581-->[com.google.android.gms:play-services-auth:21.2.0] /Users/marianoor/.gradle/caches/transforms-4/b42e98ba17dd4c8069d6b0436ac25008/transformed/jetified-play-services-auth-21.2.0/AndroidManifest.xml:24:13-93
+582            android:excludeFromRecents="true"
+582-->[com.google.android.gms:play-services-auth:21.2.0] /Users/marianoor/.gradle/caches/transforms-4/b42e98ba17dd4c8069d6b0436ac25008/transformed/jetified-play-services-auth-21.2.0/AndroidManifest.xml:25:13-46
+583            android:exported="false"
+583-->[com.google.android.gms:play-services-auth:21.2.0] /Users/marianoor/.gradle/caches/transforms-4/b42e98ba17dd4c8069d6b0436ac25008/transformed/jetified-play-services-auth-21.2.0/AndroidManifest.xml:26:13-37
+584            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+584-->[com.google.android.gms:play-services-auth:21.2.0] /Users/marianoor/.gradle/caches/transforms-4/b42e98ba17dd4c8069d6b0436ac25008/transformed/jetified-play-services-auth-21.2.0/AndroidManifest.xml:27:13-72
+585        <!--
+586            Service handling Google Sign-In user revocation. For apps that do not integrate with
+587            Google Sign-In, this service will never be started.
+588        -->
+589        <service
+589-->[com.google.android.gms:play-services-auth:21.2.0] /Users/marianoor/.gradle/caches/transforms-4/b42e98ba17dd4c8069d6b0436ac25008/transformed/jetified-play-services-auth-21.2.0/AndroidManifest.xml:33:9-37:51
+590            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+590-->[com.google.android.gms:play-services-auth:21.2.0] /Users/marianoor/.gradle/caches/transforms-4/b42e98ba17dd4c8069d6b0436ac25008/transformed/jetified-play-services-auth-21.2.0/AndroidManifest.xml:34:13-89
+591            android:exported="true"
+591-->[com.google.android.gms:play-services-auth:21.2.0] /Users/marianoor/.gradle/caches/transforms-4/b42e98ba17dd4c8069d6b0436ac25008/transformed/jetified-play-services-auth-21.2.0/AndroidManifest.xml:35:13-36
+592            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+592-->[com.google.android.gms:play-services-auth:21.2.0] /Users/marianoor/.gradle/caches/transforms-4/b42e98ba17dd4c8069d6b0436ac25008/transformed/jetified-play-services-auth-21.2.0/AndroidManifest.xml:36:13-107
+593            android:visibleToInstantApps="true" />
+593-->[com.google.android.gms:play-services-auth:21.2.0] /Users/marianoor/.gradle/caches/transforms-4/b42e98ba17dd4c8069d6b0436ac25008/transformed/jetified-play-services-auth-21.2.0/AndroidManifest.xml:37:13-48
+594
+595        <meta-data
+595-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] /Users/marianoor/.gradle/caches/transforms-4/3796641597a1477388ac4d6e71b22413/transformed/jetified-okhttp3-integration-4.12.0/AndroidManifest.xml:11:9-13:43
+596            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+596-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] /Users/marianoor/.gradle/caches/transforms-4/3796641597a1477388ac4d6e71b22413/transformed/jetified-okhttp3-integration-4.12.0/AndroidManifest.xml:12:13-84
+597            android:value="GlideModule" />
+597-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] /Users/marianoor/.gradle/caches/transforms-4/3796641597a1477388ac4d6e71b22413/transformed/jetified-okhttp3-integration-4.12.0/AndroidManifest.xml:13:13-40
+598
+599        <receiver
+599-->[com.google.firebase:firebase-messaging:24.0.0] /Users/marianoor/.gradle/caches/transforms-4/05f0cbac9d8b79cd08eeb1f04d7e9ad7/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:29:9-40:20
+600            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+600-->[com.google.firebase:firebase-messaging:24.0.0] /Users/marianoor/.gradle/caches/transforms-4/05f0cbac9d8b79cd08eeb1f04d7e9ad7/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:30:13-78
+601            android:exported="true"
+601-->[com.google.firebase:firebase-messaging:24.0.0] /Users/marianoor/.gradle/caches/transforms-4/05f0cbac9d8b79cd08eeb1f04d7e9ad7/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:31:13-36
+602            android:permission="com.google.android.c2dm.permission.SEND" >
+602-->[com.google.firebase:firebase-messaging:24.0.0] /Users/marianoor/.gradle/caches/transforms-4/05f0cbac9d8b79cd08eeb1f04d7e9ad7/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:32:13-73
+603            <intent-filter>
+603-->[:react-native-firebase_messaging] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-29:29
+604                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+604-->[:react-native-firebase_messaging] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:17-81
+604-->[:react-native-firebase_messaging] /Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:25-78
+605            </intent-filter>
+606
+607            <meta-data
+607-->[com.google.firebase:firebase-messaging:24.0.0] /Users/marianoor/.gradle/caches/transforms-4/05f0cbac9d8b79cd08eeb1f04d7e9ad7/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:37:13-39:40
+608                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+608-->[com.google.firebase:firebase-messaging:24.0.0] /Users/marianoor/.gradle/caches/transforms-4/05f0cbac9d8b79cd08eeb1f04d7e9ad7/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:38:17-92
+609                android:value="true" />
+609-->[com.google.firebase:firebase-messaging:24.0.0] /Users/marianoor/.gradle/caches/transforms-4/05f0cbac9d8b79cd08eeb1f04d7e9ad7/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:39:17-37
+610        </receiver>
+611        <!--
+612             FirebaseMessagingService performs security checks at runtime,
+613             but set to not exported to explicitly avoid allowing another app to call it.
+614        -->
+615        <service
+615-->[com.google.firebase:firebase-messaging:24.0.0] /Users/marianoor/.gradle/caches/transforms-4/05f0cbac9d8b79cd08eeb1f04d7e9ad7/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:46:9-53:19
+616            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+616-->[com.google.firebase:firebase-messaging:24.0.0] /Users/marianoor/.gradle/caches/transforms-4/05f0cbac9d8b79cd08eeb1f04d7e9ad7/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:47:13-82
+617            android:directBootAware="true"
+617-->[com.google.firebase:firebase-messaging:24.0.0] /Users/marianoor/.gradle/caches/transforms-4/05f0cbac9d8b79cd08eeb1f04d7e9ad7/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:48:13-43
+618            android:exported="false" >
+618-->[com.google.firebase:firebase-messaging:24.0.0] /Users/marianoor/.gradle/caches/transforms-4/05f0cbac9d8b79cd08eeb1f04d7e9ad7/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:49:13-37
+619            <intent-filter android:priority="-500" >
+619-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:51:5-53:21
+620                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+620-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:52:9-69
+620-->/Users/marianoor/Documents/GitHub/BoatOffer-Mobile-App/android/app/src/main/AndroidManifest.xml:52:17-67
+621            </intent-filter>
+622        </service> <!-- Needs to be explicitly declared on P+ -->
+623        <uses-library
+623-->[com.google.android.gms:play-services-maps:18.0.2] /Users/marianoor/.gradle/caches/transforms-4/926d6bebd5cb41e954673d64600433b0/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
+624            android:name="org.apache.http.legacy"
+624-->[com.google.android.gms:play-services-maps:18.0.2] /Users/marianoor/.gradle/caches/transforms-4/926d6bebd5cb41e954673d64600433b0/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
+625            android:required="false" />
+625-->[com.google.android.gms:play-services-maps:18.0.2] /Users/marianoor/.gradle/caches/transforms-4/926d6bebd5cb41e954673d64600433b0/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
+626
+627        <activity
+627-->[com.google.android.gms:play-services-base:18.3.0] /Users/marianoor/.gradle/caches/transforms-4/7916a2072d34729f106669d97ff41183/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:9-22:45
+628            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+628-->[com.google.android.gms:play-services-base:18.3.0] /Users/marianoor/.gradle/caches/transforms-4/7916a2072d34729f106669d97ff41183/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:19-85
+629            android:exported="false"
+629-->[com.google.android.gms:play-services-base:18.3.0] /Users/marianoor/.gradle/caches/transforms-4/7916a2072d34729f106669d97ff41183/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:22:19-43
+630            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+630-->[com.google.android.gms:play-services-base:18.3.0] /Users/marianoor/.gradle/caches/transforms-4/7916a2072d34729f106669d97ff41183/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:21:19-78
+631
+632        <provider
+632-->[com.google.firebase:firebase-common:21.0.0] /Users/marianoor/.gradle/caches/transforms-4/5e1a8530fd3974822bac3044e4fadb8c/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+633            android:name="com.google.firebase.provider.FirebaseInitProvider"
+633-->[com.google.firebase:firebase-common:21.0.0] /Users/marianoor/.gradle/caches/transforms-4/5e1a8530fd3974822bac3044e4fadb8c/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+634            android:authorities="com.OfferBoat.firebaseinitprovider"
+634-->[com.google.firebase:firebase-common:21.0.0] /Users/marianoor/.gradle/caches/transforms-4/5e1a8530fd3974822bac3044e4fadb8c/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+635            android:directBootAware="true"
+635-->[com.google.firebase:firebase-common:21.0.0] /Users/marianoor/.gradle/caches/transforms-4/5e1a8530fd3974822bac3044e4fadb8c/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+636            android:exported="false"
+636-->[com.google.firebase:firebase-common:21.0.0] /Users/marianoor/.gradle/caches/transforms-4/5e1a8530fd3974822bac3044e4fadb8c/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+637            android:initOrder="100" />
+637-->[com.google.firebase:firebase-common:21.0.0] /Users/marianoor/.gradle/caches/transforms-4/5e1a8530fd3974822bac3044e4fadb8c/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+638
+639        <meta-data
+639-->[com.google.android.gms:play-services-basement:18.3.0] /Users/marianoor/.gradle/caches/transforms-4/99d0efcba9824e346f8951a48c78c5e4/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+640            android:name="com.google.android.gms.version"
+640-->[com.google.android.gms:play-services-basement:18.3.0] /Users/marianoor/.gradle/caches/transforms-4/99d0efcba9824e346f8951a48c78c5e4/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+641            android:value="@integer/google_play_services_version" />
+641-->[com.google.android.gms:play-services-basement:18.3.0] /Users/marianoor/.gradle/caches/transforms-4/99d0efcba9824e346f8951a48c78c5e4/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+642
+643        <receiver
+643-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+644            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+644-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+645            android:directBootAware="false"
+645-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+646            android:enabled="true"
+646-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+647            android:exported="true"
+647-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+648            android:permission="android.permission.DUMP" >
+648-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+649            <intent-filter>
+649-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+650                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+650-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+650-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+651            </intent-filter>
+652            <intent-filter>
+652-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+653                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+653-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+653-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+654            </intent-filter>
+655            <intent-filter>
+655-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+656                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+656-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+656-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+657            </intent-filter>
+658            <intent-filter>
+658-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+659                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+659-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+659-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/marianoor/.gradle/caches/transforms-4/571bd77152c12d84b1a4784f49300e2e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+660            </intent-filter>
+661        </receiver>
+662
+663        <service
+663-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/marianoor/.gradle/caches/transforms-4/2ffbe2d67119ad1d47eb826b5e16c41f/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:28:9-34:19
+664            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+664-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/marianoor/.gradle/caches/transforms-4/2ffbe2d67119ad1d47eb826b5e16c41f/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:29:13-103
+665            android:exported="false" >
+665-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/marianoor/.gradle/caches/transforms-4/2ffbe2d67119ad1d47eb826b5e16c41f/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:30:13-37
+666            <meta-data
+666-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/marianoor/.gradle/caches/transforms-4/2ffbe2d67119ad1d47eb826b5e16c41f/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:31:13-33:39
+667                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+667-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/marianoor/.gradle/caches/transforms-4/2ffbe2d67119ad1d47eb826b5e16c41f/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:32:17-94
+668                android:value="cct" />
+668-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/marianoor/.gradle/caches/transforms-4/2ffbe2d67119ad1d47eb826b5e16c41f/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:33:17-36
+669        </service>
+670        <service
+670-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/marianoor/.gradle/caches/transforms-4/9c49b1e48a985cfea3ae7633b25c7f8f/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:26:9-30:19
+671            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+671-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/marianoor/.gradle/caches/transforms-4/9c49b1e48a985cfea3ae7633b25c7f8f/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:27:13-117
+672            android:exported="false"
+672-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/marianoor/.gradle/caches/transforms-4/9c49b1e48a985cfea3ae7633b25c7f8f/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:28:13-37
+673            android:permission="android.permission.BIND_JOB_SERVICE" >
+673-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/marianoor/.gradle/caches/transforms-4/9c49b1e48a985cfea3ae7633b25c7f8f/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:29:13-69
+674        </service>
+675
+676        <receiver
+676-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/marianoor/.gradle/caches/transforms-4/9c49b1e48a985cfea3ae7633b25c7f8f/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:32:9-34:40
+677            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+677-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/marianoor/.gradle/caches/transforms-4/9c49b1e48a985cfea3ae7633b25c7f8f/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:33:13-132
+678            android:exported="false" />
+678-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/marianoor/.gradle/caches/transforms-4/9c49b1e48a985cfea3ae7633b25c7f8f/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:34:13-37
+679
+680        <meta-data
+680-->[com.facebook.soloader:soloader:0.10.5] /Users/marianoor/.gradle/caches/transforms-4/98fca82ba03a3de58f822583055492b9/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:12:9-14:37
+681            android:name="com.facebook.soloader.enabled"
+681-->[com.facebook.soloader:soloader:0.10.5] /Users/marianoor/.gradle/caches/transforms-4/98fca82ba03a3de58f822583055492b9/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:13:13-57
+682            android:value="false" /> <!-- Receiver Service -->
+682-->[com.facebook.soloader:soloader:0.10.5] /Users/marianoor/.gradle/caches/transforms-4/98fca82ba03a3de58f822583055492b9/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:14:13-34
+683        <service
+683-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:29:9-31:40
+684            android:name="app.notifee.core.ReceiverService"
+684-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:30:13-60
+685            android:exported="false" />
+685-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:31:13-37
+686
+687        <activity
+687-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:33:9-39:75
+688            android:name="app.notifee.core.NotificationReceiverActivity"
+688-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:34:13-73
+689            android:excludeFromRecents="true"
+689-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:35:13-46
+690            android:exported="true"
+690-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:36:13-36
+691            android:noHistory="true"
+691-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:37:13-37
+692            android:taskAffinity=""
+692-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:38:13-36
+693            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Foreground Service -->
+693-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:39:13-72
+694        <service
+694-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:42:9-44:40
+695            android:name="app.notifee.core.ForegroundService"
+695-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:43:13-62
+696            android:exported="false" />
+696-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:44:13-37
+697
+698        <receiver
+698-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:46:9-54:20
+699            android:name="app.notifee.core.RebootBroadcastReceiver"
+699-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:47:13-68
+700            android:exported="false" >
+700-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:48:13-37
+701            <intent-filter>
+701-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:49:13-53:29
+702                <action android:name="android.intent.action.BOOT_COMPLETED" />
+702-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:117:17-79
+702-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:117:25-76
+703                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+703-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:51:17-82
+703-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:51:25-79
+704                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+704-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:52:17-82
+704-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:52:25-79
+705            </intent-filter>
+706        </receiver>
+707        <receiver
+707-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:55:9-61:20
+708            android:name="app.notifee.core.AlarmPermissionBroadcastReceiver"
+708-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:56:13-77
+709            android:exported="true" >
+709-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:57:13-36
+710            <intent-filter>
+710-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:58:13-60:29
+711                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+711-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:59:17-107
+711-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:59:25-104
+712            </intent-filter>
+713        </receiver>
+714        <receiver
+714-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:62:9-70:20
+715            android:name="app.notifee.core.NotificationAlarmReceiver"
+715-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:63:13-70
+716            android:exported="false" >
+716-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:64:13-37
+717            <intent-filter>
+717-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:49:13-53:29
+718                <action android:name="android.intent.action.BOOT_COMPLETED" />
+718-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:117:17-79
+718-->[androidx.work:work-runtime:2.8.0] /Users/marianoor/.gradle/caches/transforms-4/45d87d39406dd44f61da9d2ad446e5af/transformed/work-runtime-2.8.0/AndroidManifest.xml:117:25-76
+719                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+719-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:51:17-82
+719-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:51:25-79
+720                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+720-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:52:17-82
+720-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:52:25-79
+721            </intent-filter>
+722        </receiver> <!-- Broadcast Receiver -->
+723        <receiver
+723-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:73:9-81:20
+724            android:name="app.notifee.core.BlockStateBroadcastReceiver"
+724-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:74:13-72
+725            android:exported="false" >
+725-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:75:13-37
+726            <intent-filter>
+726-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:76:13-80:29
+727                <action android:name="android.app.action.APP_BLOCK_STATE_CHANGED" />
+727-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:77:17-85
+727-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:77:25-82
+728                <action android:name="android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED" />
+728-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:78:17-102
+728-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:78:25-99
+729                <action android:name="android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED" />
+729-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:79:17-108
+729-->[app.notifee:core:202108261754] /Users/marianoor/.gradle/caches/transforms-4/f0f2220f0a499336bc0b1c5e249e0959/transformed/jetified-core-202108261754/AndroidManifest.xml:79:25-105
+730            </intent-filter>
+731        </receiver>
+732
+733        <meta-data
+733-->[com.google.android.instantapps:instantapps:1.1.0] /Users/marianoor/.gradle/caches/transforms-4/b4127de9644f3fa3e722a99fcaa239e1/transformed/jetified-instantapps-1.1.0/AndroidManifest.xml:10:9-12:33
+734            android:name="aia-compat-api-min-version"
+734-->[com.google.android.instantapps:instantapps:1.1.0] /Users/marianoor/.gradle/caches/transforms-4/b4127de9644f3fa3e722a99fcaa239e1/transformed/jetified-instantapps-1.1.0/AndroidManifest.xml:11:13-54
+735            android:value="1" />
+735-->[com.google.android.instantapps:instantapps:1.1.0] /Users/marianoor/.gradle/caches/transforms-4/b4127de9644f3fa3e722a99fcaa239e1/transformed/jetified-instantapps-1.1.0/AndroidManifest.xml:12:13-30
+736    </application>
+737
+738</manifest>

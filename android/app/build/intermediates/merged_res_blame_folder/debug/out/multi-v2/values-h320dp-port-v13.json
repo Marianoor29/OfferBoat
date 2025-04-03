@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.OfferBoat.app-mergeDebugResources-103:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/marianoor/.gradle/caches/transforms-4/d6f5d8c83e84fbc3837eb37d25e9ef76/transformed/material-1.11.0/res/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "63",
+                        "endOffsets": "114"
+                    }
+                }
+            ]
+        }
+    ]
+}

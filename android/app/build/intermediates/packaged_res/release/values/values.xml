@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="status_bar_color">#ffffff</color>
+    <integer name="react_native_dev_server_port">8081</integer>
+    <string name="app_name">OfferBoat</string>
+    <string name="default_web_client_id" translatable="false">455920054389-u3k16vjv6kus9bja2gj9cl0lb01rhmon.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">455920054389</string>
+    <string name="google_api_key" translatable="false">AIzaSyB7NiLrVYu5VKwsePs25A0X_hyCWJ2st2I</string>
+    <string name="google_app_id" translatable="false">1:455920054389:android:43043b9f5db662d7c6083c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB7NiLrVYu5VKwsePs25A0X_hyCWJ2st2I</string>
+    <string name="google_storage_bucket" translatable="false">offerboat-54082.appspot.com</string>
+    <string name="project_id" translatable="false">offerboat-54082</string>
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+    </style>
+</resources>
