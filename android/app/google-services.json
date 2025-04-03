@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "455920054389",
+    "project_id": "offerboat-54082",
+    "storage_bucket": "offerboat-54082.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455920054389:android:43...83c",
+        "android_client_info": {
+          "package_name": "com.OfferBoat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "455920054389-7k...4cd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.OfferBoat",
+            "certificate_hash": "5e8f16062ea3cd...8cabf625"
+          }
+        },
+        {
+          "client_id": "455920054389-u3k1...mon.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaS....A0X_hyCWJ2st2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "455920054389-u3k1...hmon.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "455920054389-vteqo....6t83.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.offerboat"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
